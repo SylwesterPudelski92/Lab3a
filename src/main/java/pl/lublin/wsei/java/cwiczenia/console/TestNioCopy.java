@@ -12,7 +12,7 @@ public class TestNioCopy {
         long startTime = System.nanoTime();
         Path oryginal = Paths.get("sample_1920x1280.tiff");
         Path kopia = Paths.get("img_copy2.tiff");
-        Files.copy(oryginal, kopia, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(oryginal, kopia);
         System.out.println("Czas kopiowania: " +(float)(System.nanoTime() - startTime)/1000000+" ms");
 
     }
